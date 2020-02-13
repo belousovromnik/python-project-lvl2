@@ -1,0 +1,8 @@
+poetry config virtualenvs.in-project true
+source $HOME/.poetry/env
+
+
+poetry init
+
+
+poetry run gendiff
