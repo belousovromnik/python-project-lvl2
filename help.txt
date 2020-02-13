@@ -5,4 +5,29 @@ source $HOME/.poetry/env
 poetry init
 
 
+poetry run gendiff -h
 poetry run gendiff
+
+poetry run gendiff first_file second_file
+poetry run python -m gendiff.scripts.gendiff first_file second_file
+
+
+poetry build
+poetry publish -r belousovromnik-gendiff
+
+
+добавление репозитория в тестовом pypi
+poetry config repositories.belousovromnik-gendiff https://test.pypi.org/legacy/
+
+
+установка пакета из тестового pypi
+.venv/bin/python3 -m pip install --no-cache-dir --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple belousovromnik-gendiff
+python3 -m pip install --no-cache-dir --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple belousovromnik-gendiff
+
+
+удаление пакета
+python3 -m pip uninstall belousovromnik-gendiff
+
+
+запуск установленного пакета
+/home/belrom/.local/bin/gendiff first-file seconf-file

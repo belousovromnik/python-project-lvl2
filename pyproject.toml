@@ -1,8 +1,9 @@
 [tool.poetry]
-name = "gendiff"
+name = "belousovromnik-gendiff"
 version = "0.1.0"
 description = "Проект Вычислитель отличий"
 authors = ["belousovromnik <belousovromnik@yandex.ru>"]
+repository = 'https://github.com/belousovromnik/python-project-lvl2'
 
 packages = [
 {include = "gendiff" },
