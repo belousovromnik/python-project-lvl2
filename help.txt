@@ -31,3 +31,6 @@ python3 -m pip uninstall belousovromnik-gendiff
 
 запуск установленного пакета
 /home/belrom/.local/bin/gendiff first-file seconf-file
+
+cd /home/belrom/.local/bin/
+./gendiff /home/belrom/python-project-lvl2/before.json /home/belrom/python-project-lvl2/after.json

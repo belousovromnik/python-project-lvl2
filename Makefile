@@ -5,7 +5,7 @@ test:
 	poetry run pytest hexlet_python_package tests
 
 lint:
-	poetry run flake8 hexlet_python_package
+	poetry run flake8 gendiff
 
 selfcheck:
 	poetry check
@@ -16,6 +16,9 @@ build: check
 	@poetry build
 
 run:
-	poetry run gendiff
+	poetry run gendiff before.json after.json
+
+runa:
+	poetry run gendiff /home/belrom/python-project-lvl2/before.json /home/belrom/python-project-lvl2/after.json
 
 .PHONY: install test lint selfcheck check build
