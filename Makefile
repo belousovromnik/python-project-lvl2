@@ -2,7 +2,7 @@ install:
 	@poetry install
 
 test:
-	poetry run pytest hexlet_python_package tests
+	poetry run pytest gendiff tests
 
 lint:
 	poetry run flake8 gendiff
